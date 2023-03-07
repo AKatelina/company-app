@@ -52,7 +52,7 @@ button {
 }
 
 button:active {
-    background-color: transparent;
+    background-color: yellow;
 }
 
 :active, :hover, :focus {
