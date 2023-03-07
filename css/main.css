@@ -164,6 +164,12 @@
     width: auto;
 }
 
+.sidebar__choose-filial-search input:hover,
+.sidebar__choose-filial-search input:focus,
+.sidebar__choose-filial-search input:active {
+    background-color: #FFF;
+}
+
 /*Меню филиалов---Пункты меню филиалов*/
 .sidebar__filial-li {
     margin: 0;
@@ -282,6 +288,12 @@
 /*Навбар---Хлебные крошки*/
 .navbar__breadcrumbs {
     font: var(--font-normal);
+}
+
+/*РАБОЧЕЕ ПРОСТРАНСТВО*/
+.main {
+    margin: 0;
+    padding: 1rem;
 }
 
 
