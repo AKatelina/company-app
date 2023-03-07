@@ -48,6 +48,7 @@ button {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    transition: none;
 }
 
 :active, :hover, :focus {
@@ -58,6 +59,7 @@ button {
 a {
     color: inherit;
     text-decoration: inherit;
+    transition: none;
 }
 
 label {
