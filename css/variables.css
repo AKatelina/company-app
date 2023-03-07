@@ -7,7 +7,7 @@
     --light-main-color: #F0F8FF;
 
     --main-font-style: "Open Sans", sans-serif;
-    --font-largest-bold: 800 35px "Open Sans", sans-serif;
+    --font-largest-bold: 800 33px "Open Sans", sans-serif;
     --font-large-bold: 800 20px "Open Sans", sans-serif;
     --font-large: 400 20px "Open Sans", sans-serif;
     --font-normal: 400 16px "Open Sans", sans-serif;
@@ -68,10 +68,3 @@ a {
 label {
     display: none;
 }
-
-
-/*@media(hover: hover) and (pointer: fine) {*/
-/*    a:hover, button:hover {*/
-/*        background: green;*/
-/*    }*/
-/*}*/
