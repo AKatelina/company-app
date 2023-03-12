@@ -1,0 +1,30 @@
+/*ПЕРЕМЕННЫЕ*/
+@import url("variables.css");
+
+/*ВНУТРЕННЯЯ ФОРМА*/
+.f-normal {
+    font: var(--font-normal);
+}
+
+.f-business {
+    width: 40%;
+}
+
+.f-normal input,
+.f-normal textarea {
+    margin: 5px 0 10px 0;
+    padding: 4px 6px;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    font: var(--font-normal);
+}
+
+.f-normal input[type="radio"] {
+    width: auto;
+}
+
+.f-label-show {
+    display: block;
+}

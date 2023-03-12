@@ -25,11 +25,13 @@
 }
 
 .header .logo-text {
+    margin-right: auto;
+
     font: var(--font-large-bold);
 }
 
 .header .log-link {
-    margin-left: auto;
+    margin: 0 0 0 1rem;
 
     font: var(--font-normal);
     color: var(--middle-main-color);
@@ -40,7 +42,7 @@
     padding: 0.5rem 1rem;
     width: 100%;
     max-width: 1240px;
-    height: 100%;
+    min-height: 56px;
 
     display: flex;
     box-sizing: border-box;

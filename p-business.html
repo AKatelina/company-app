@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>clicliBusiness | Бизнес</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+    <link rel="stylesheet" href="css/p-business.css">
+</head>
+
+<body class="body-absolute">
+<script src="js/main.js" defer></script>
+
+<div class="app">
+    <div class="sidebar">
+        <div class="sidebar__mb-close-sidebar-section">
+            <button class="sidebar__mb-btn-close-sidebar">
+                <img src="images/icons/x-lg.svg" alt="Закрыть боковое меню">
+            </button>
+        </div>
+
+        <div class="sidebar__current-filial">
+            <div>
+                <div class="company">
+                    CliCliBusiness
+                </div>
+                <div class="filial">
+                    Йошкар-Ола
+                </div>
+            </div>
+            <button class="choose-filial-btn">
+                <img class="choose-filial-arrow" src="images/icons/chevron-down.svg" alt="Выбрать филиал">
+            </button>
+        </div>
+
+        <div class="sidebar__choose-filial">
+            <div class="sidebar__choose-filial-search">
+                <div>
+                    <input id="search-filial" placeholder="Поиск филиала...">
+                    <label for="search-filial">Поиск филиала...</label>
+                    <button>
+                        <img src="images/icons/search.svg" alt="Поиск филиала">
+                    </button>
+                </div>
+            </div>
+            <a href="#filial-Yoshkar-Ola" class="sidebar__filial-li">Йошкар-Ола <i>&rarr;</i></a>
+        </div>
+
+        <div class="sidebar__pages">
+            <a href="index.html">Главная</a>
+            <a href="p-dashboard.html">Дашборд</a>
+            <a href="p-business.html">Бизнес</a>
+            <a href="p-staff.html">Сотрудники</a>
+        </div>
+
+        <div class="sidebar__footer">
+            <a href="login.html">
+                <img class="logout" src="images/icons/box-arrow-left.svg" alt="Выход из личного кабинета">
+            </a>
+            <!--            <a href="#settings">-->
+            <!--                <img class="settings" src="images/icons/gear.svg" alt="Настройки личного кабинета">-->
+            <!--            </a>-->
+            <!--            <a href="#support">-->
+            <!--                <img class="chat" src="images/icons/chat-dots.svg" alt="Чат техподдержки">-->
+            <!--            </a>-->
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="navbar">
+            <button class="navbar__mb-btn-open-sidebar">
+                <img src="images/icons/list.svg" alt="Открыть боковое меню">
+            </button>
+            <div class="navbar__breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="p-business.html">Бизнес</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <form class="f-normal f-business">
+                <div>
+                    <label for="f-title" class="f-label-show">
+                        Название
+                    </label>
+                    <input id="f-title" type="text" placeholder="СliСliBusiness">
+                </div>
+
+                <div>
+                    <label for="f-description" class="f-label-show">
+                        Краткое описание
+                    </label>
+                    <textarea id="f-description">Мы умеем анализировать ваш бизнес, оптимизировать затраты и увеличивать прибыль</textarea>
+                </div>
+
+                <div>
+                    <label for="f-mission" class="f-label-show">
+                        Миссия
+                    </label>
+                    <input id="f-mission" type="text" placeholder="Оптимизируем ваши бизнес-процессы">
+                </div>
+
+
+                <div>
+                    <label for="f-auditory" class="f-label-show">
+                        Целевая аудитория
+                    </label>
+                    <input id="f-auditory" type="text" placeholder="Целевая аудитория"><br>
+                </div>
+
+                <div>
+                    <label for="f-auditory-style1" class="f-label-show">
+                        Тип аудитории:
+                    </label>
+                    <input id="f-auditory-style1" type="radio" name="f-auditory-style"> Бизнесовый (vip) <br>
+                    <input id="f-auditory-style2" type="radio" name="f-auditory-style"> Семейный (health)<br>
+                    <input id="f-auditory-style3" type="radio" name="f-auditory-style"> Эстетичный (beauty)<br>
+                    <input id="f-auditory-style4" type="radio" name="f-auditory-style"> Надежный (practical)<br>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
