@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const target = event.target;
 
-            console.log(closeMBtn.contains(target));
             if ((isSidebarOpen && !sidebar.contains(target)) //попала по правому пространству
                 || (!isSidebarOpen && openMBtn.contains(target)) //попала по мобильному меню
                 || (isSidebarOpen && closeMBtn.contains(target))) { //попала по кнопке закрыть
@@ -19,15 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
-    // //закрытие мобильного меню
-    // document.querySelectorAll('.sidebar__mb-btn-close-sidebar').forEach(function (mbMenuBtn) {
-    //     mbMenuBtn.addEventListener('click', function () {
-    //         document.querySelectorAll('.sidebar').forEach(function (sidebar) {
-    //             sidebar.classList.toggle('sidebar__mb-open')
-    //         })
-    //     })
-    // });
 
     //открытие меню филиалов
     document.querySelectorAll('.sidebar__current-filial').forEach(function (chooseFilialBtn) {

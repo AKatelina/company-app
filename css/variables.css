@@ -68,3 +68,7 @@ a {
 label {
     display: none;
 }
+
+.f-label-show {
+    display: block;
+}

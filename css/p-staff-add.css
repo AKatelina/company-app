@@ -1,0 +1,77 @@
+/*ПЕРЕМЕННЫЕ*/
+@import url("variables.css");
+
+.f-add-staff {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    font: var(--font-normal);
+}
+
+.f-add-staff-row {
+    margin: 0 0 1rem 0;
+    padding: 0 0 0.5rem 0;
+    width: 100%;
+
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.f-add-staff-row .title {
+    width: 25%;
+}
+
+.f-add-staff-row .fields {
+    width: 75%;
+}
+
+.f-add-staff input {
+    margin: 0.2rem 0 1rem 0;
+    padding: 4px 6px;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    font: var(--font-normal);
+}
+
+.f-add-staff label {
+    font: var(--font-small);
+}
+
+.f-add-staff .fields .fio {
+    display: flex;
+}
+
+.f-add-staff .fields .fio div{
+    margin: 0 1rem 0 0;
+}
+
+.f-add-staff #f-name,
+.f-add-staff #f-sername,
+.f-add-staff #f-patronymic,
+.f-add-staff #f-birthday,
+.f-add-staff #f-phone,
+.f-add-staff #f-post {
+    max-width: 250px;
+}
+
+label#f-photo-label {
+    margin: 0.2rem 0 1rem 0;
+    padding: 4px 6px;
+
+    display: inline-block;
+
+    border-radius: 5px;
+    color: white;
+    background-color: var(--middle-main-color);
+    font: var(--font-normal);
+    cursor: pointer;
+}
+
+#f-photo-chosen{
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+}

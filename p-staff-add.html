@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>МоиЗаписи | Сотрудники</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+    <link rel="stylesheet" href="css/p-staff-add.css?v=1.0">
+</head>
+
+<body class="body-absolute">
+<script src="js/main.js" defer></script>
+<script src="js/p-staff-add.js" defer></script>
+
+<div class="app">
+    <div class="sidebar">
+        <div class="sidebar__mb-close-sidebar-section">
+            <button class="sidebar__mb-btn-close-sidebar">
+                <img src="images/icons/x-lg.svg" alt="Закрыть боковое меню">
+            </button>
+        </div>
+
+        <div class="sidebar__current-filial">
+            <div>
+                <div class="company">
+                    CliCliBusiness
+                </div>
+                <div class="filial">
+                    Йошкар-Ола
+                </div>
+            </div>
+            <button class="choose-filial-btn">
+                <img class="choose-filial-arrow" src="images/icons/chevron-down.svg" alt="Выбрать филиал">
+            </button>
+        </div>
+
+        <div class="sidebar__choose-filial">
+            <div class="sidebar__choose-filial-search">
+                <div>
+                    <input id="search-filial" placeholder="Поиск филиала...">
+                    <label for="search-filial">Поиск филиала...</label>
+                    <button>
+                        <img src="images/icons/search.svg" alt="Поиск филиала">
+                    </button>
+                </div>
+            </div>
+            <a href="#filial-Yoshkar-Ola" class="sidebar__filial-li">Йошкар-Ола <i>&rarr;</i></a>
+        </div>
+
+        <div class="sidebar__pages">
+            <a href="index.html">Главная</a>
+            <a href="p-dashboard.html">Дашборд</a>
+            <a href="p-business.html">Бизнес</a>
+            <hr>
+            <a href="p-staff.html">Сотрудники</a>
+            <a href="#">Услуги</a>
+            <a href="#">Календарь</a>
+        </div>
+
+        <div class="sidebar__footer">
+            <a href="login.html">
+                <img class="logout" src="images/icons/box-arrow-left.svg" alt="Выход из личного кабинета">
+            </a>
+            <!--            <a href="#settings">-->
+            <!--                <img class="settings" src="images/icons/gear.svg" alt="Настройки личного кабинета">-->
+            <!--            </a>-->
+            <!--            <a href="#support">-->
+            <!--                <img class="chat" src="images/icons/chat-dots.svg" alt="Чат техподдержки">-->
+            <!--            </a>-->
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="navbar">
+            <button class="navbar__mb-btn-open-sidebar">
+                <img src="images/icons/list.svg" alt="Открыть боковое меню">
+            </button>
+            <div class="navbar__breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="p-staff-add.html">Новый сотрудник</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <form class="f-add-staff">
+                <div class="f-add-staff-row">
+                    <div class="title">
+                        Основное
+                    </div>
+                    <div class="fields">
+                        <div class="fio">
+                            <div>
+                                <label for="f-sername" class="f-label-show">Фамилия</label>
+                                <input id="f-sername" placeholder="Кателинская">
+                            </div>
+                            <div>
+                                <label for="f-name" class="f-label-show">Имя</label>
+                                <input id="f-name" placeholder="Анастасия">
+                            </div>
+                            <div>
+                                <label for="f-patronymic" class="f-label-show">Отчество</label>
+                                <input id="f-patronymic" placeholder="Александровна">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="f-label-show">Фото профиля</label>
+                            <input id="f-photo" type="file" name="file" hidden>
+                            <label id="f-photo-label" class="f-label-show" for="f-photo">Выбрать файл</label>
+                            <span id="f-photo-chosen">Файл не выбран</span>
+                        </div>
+                        <div>
+                            <label for="f-birthday" class="f-label-show">Дата рождения</label>
+                            <input id="f-birthday" type="date" placeholder="DD/MM/YYYY">
+                        </div>
+                        <div>
+                            <label for="f-phone" class="f-label-show">Телефон</label>
+                            <input id="f-phone" type="tel" placeholder="8 (996) 958 ** **">
+                        </div>
+                    </div>
+                </div>
+                <div class="f-add-staff-row">
+                    <div class="title">
+                        Услуги
+                    </div>
+                    <div class="fields">
+                        <div>
+                            <label for="f-post" class="f-label-show">Должность</label>
+                            <input id="f-post" type="text" placeholder="Старший мастер">
+                        </div>
+                        Маникюр<br>
+                        Массаж<br>
+                        Оформление бровей<br>
+                        + Добавить<br>
+                    </div>
+                </div>
+                <div class="f-add-staff-row">
+                    <div class="title">
+                        Расписание работы
+                    </div>
+                    <div class="fields">
+                        Понедельник<br> Вторник
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
