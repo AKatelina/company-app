@@ -1,7 +1,10 @@
-const actualBtn = document.getElementById('f-photo');
+document.addEventListener("DOMContentLoaded", function () {
+    const actualBtn = document.getElementById('f-photo');
 
-const fileChosen = document.getElementById('f-photo-chosen');
+    const fileChosen = document.getElementById('f-photo-chosen');
 
-actualBtn.addEventListener('change', function(){
-    fileChosen.textContent = this.files[0].name
+    actualBtn.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name
+    })
 });
+

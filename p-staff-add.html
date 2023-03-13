@@ -90,33 +90,93 @@
                     </div>
                     <div class="fields">
                         <div class="fio">
+                            <div class="w-40-50-60-100">
+                                <div>
+                                    <label for="f-name" class="f-label-show">Имя</label>
+                                    <input type="text" id="f-name" placeholder="Анастасия">
+                                </div>
+                                <div>
+                                    <label for="f-patronymic" class="f-label-show">Отчество</label>
+                                    <input type="text" id="f-patronymic" placeholder="Александровна">
+                                </div>
+                                <div>
+                                    <label for="f-sername" class="f-label-show">Фамилия</label>
+                                    <input type="text" id="f-sername" placeholder="Кателинская">
+                                </div>
+                                <div>
+                                    <label for="f-birthday" class="f-label-show">Дата рождения</label>
+                                    <input type="date" id="f-birthday" placeholder="DD/MM/YYYY">
+                                </div>
+                                <div>
+                                    <label class="f-label-show">Пол</label>
+                                    <div class="gender">
+                                        <input id="gender-m" type="radio" name="f-auditory-style">
+                                        <label for="gender-m" class="f-label-show">Мужской</label>
+
+                                        <input id="gender-g" type="radio" name="f-auditory-style">
+                                        <label for="gender-g" class="f-label-show">Женский</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="staff-photo" class="w-60-50-40-100">
+                                <label class="f-label-show">Фото</label>
+                                <img src="images/p-staff-1.jpg" alt="Анастасия Александровна Кателинская">
+                                <div>
+                                    <input id="f-photo" type="file" name="file" hidden>
+                                    <label id="f-photo-label" class="f-label-show" for="f-photo">Выбрать файл</label>
+                                    <span id="f-photo-chosen">Файл не выбран</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-add-staff-row">
+                    <div class="title">
+                        Контакты
+                    </div>
+                    <div class="fields">
+                        <div class="w-40-50-60-100">
                             <div>
-                                <label for="f-sername" class="f-label-show">Фамилия</label>
-                                <input id="f-sername" placeholder="Кателинская">
+                                <label for="f-phone" class="f-label-show">Телефон (для звонков)</label>
+                                <input id="f-phone" type="tel" placeholder="8 (996) 958 ** **">
                             </div>
                             <div>
-                                <label for="f-name" class="f-label-show">Имя</label>
-                                <input id="f-name" placeholder="Анастасия">
+                                <label for="f-phone-tg" class="f-label-show">Телефон (телеграм)</label>
+                                <input id="f-phone-tg" type="tel" placeholder="8 (996) 958 ** **">
                             </div>
                             <div>
-                                <label for="f-patronymic" class="f-label-show">Отчество</label>
-                                <input id="f-patronymic" placeholder="Александровна">
+                                <label for="f-email" class="f-label-show">Email</label>
+                                <input id="f-email" type="email" placeholder="anastasiakatelinskaya@gmail.com">
                             </div>
                         </div>
-                        <div>
-                            <label class="f-label-show">Фото профиля</label>
-                            <input id="f-photo" type="file" name="file" hidden>
-                            <label id="f-photo-label" class="f-label-show" for="f-photo">Выбрать файл</label>
-                            <span id="f-photo-chosen">Файл не выбран</span>
+                    </div>
+                </div>
+
+                <div class="f-add-staff-row">
+                    <div class="title">
+                        Рабочее
+                    </div>
+                    <div class="fields">
+                        <div  class="w-40-50-60-100">
+                            <div>
+                                <label for="f-post" class="f-label-show">Должность</label>
+                                <input id="f-post" type="text" placeholder="Старший мастер">
+                            </div>
+                            <div>
+                                <label for="f-status" class="f-label-show">Статус профиля</label>
+                                <input id="f-status" type="text" placeholder="В отпуске">
+                            </div>
                         </div>
-                        <div>
-                            <label for="f-birthday" class="f-label-show">Дата рождения</label>
-                            <input id="f-birthday" type="date" placeholder="DD/MM/YYYY">
-                        </div>
-                        <div>
-                            <label for="f-phone" class="f-label-show">Телефон</label>
-                            <input id="f-phone" type="tel" placeholder="8 (996) 958 ** **">
-                        </div>
+<!--                        <div>-->
+<!--                            <label for="f-experience" class="f-label-show">Опыт работы (лет)</label>-->
+<!--                            <input id="f-experience" type="text" placeholder="5">-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <label for="f-employment-date" class="f-label-show">Дата приема на работу</label>-->
+<!--                            <input id="f-employment-date" type="date" placeholder="DD/MM/YYYY">-->
+<!--                        </div>-->
                     </div>
                 </div>
                 <div class="f-add-staff-row">
@@ -124,22 +184,49 @@
                         Услуги
                     </div>
                     <div class="fields">
-                        <div>
-                            <label for="f-post" class="f-label-show">Должность</label>
-                            <input id="f-post" type="text" placeholder="Старший мастер">
+                        <div class="staff-services">
+                            <div class="staff-services-row staff-services-title">
+                                <div class="services-title">Услуга</div>
+                                <div class="staff-service-rang">Уровень</div>
+                            </div>
+                            <div class="staff-services-row">
+                                <div class="services-title">Массаж</div>
+                                <div class="staff-service-rang">Профи</div>
+                                <div class="icons">
+                                    <img src="images/icons/pencil-fill.svg" alt="Изменить статус мастера по услуге">
+                                    <img src="images/icons/trash-fill.svg" alt="Удалить услугу у мастера">
+                                </div>
+                            </div>
+                            <div class="staff-services-row">
+                                <div class="services-title">Маникюр</div>
+                                <div class="staff-service-rang">Начинающий</div>
+                                <div class="icons">
+                                    <img src="images/icons/pencil-fill.svg" alt="Изменить статус мастера по услуге">
+                                    <img src="images/icons/trash-fill.svg" alt="Удалить услугу у мастера">
+                                </div>
+                            </div>
+                            <div class="staff-services-row">
+                                <div class="services-title">Оформление бровей</div>
+                                <div class="staff-service-rang">Стажер</div>
+                                <div class="icons">
+                                    <img src="images/icons/pencil-fill.svg" alt="Изменить статус мастера по услуге">
+                                    <img src="images/icons/trash-fill.svg" alt="Удалить услугу у мастера">
+                                </div>
+                            </div>
+                            <div class="staff-services-row">
+                                <div class="services-title">Шугаринг</div>
+                                <div class="staff-service-rang">Мастер</div>
+                                <div class="icons">
+                                    <img src="images/icons/pencil-fill.svg" alt="Изменить статус мастера по услуге">
+                                    <img src="images/icons/trash-fill.svg" alt="Удалить услугу у мастера">
+                                </div>
+                            </div>
+                            <div class="staff-services-btn">
+                                <button class="add">
+                                    <b>+</b> Добавить услугу
+                                </button>
+                            </div>
                         </div>
-                        Маникюр<br>
-                        Массаж<br>
-                        Оформление бровей<br>
-                        + Добавить<br>
-                    </div>
-                </div>
-                <div class="f-add-staff-row">
-                    <div class="title">
-                        Расписание работы
-                    </div>
-                    <div class="fields">
-                        Понедельник<br> Вторник
                     </div>
                 </div>
             </form>

@@ -25,6 +25,7 @@
 
 .f-add-staff-row .fields {
     width: 75%;
+    position: relative;
 }
 
 .f-add-staff input {
@@ -45,8 +46,8 @@
     display: flex;
 }
 
-.f-add-staff .fields .fio div{
-    margin: 0 1rem 0 0;
+.f-add-staff .fields div {
+    /*margin: 0 1rem 0 0;*/
 }
 
 .f-add-staff #f-name,
@@ -54,12 +55,48 @@
 .f-add-staff #f-patronymic,
 .f-add-staff #f-birthday,
 .f-add-staff #f-phone,
-.f-add-staff #f-post {
-    max-width: 250px;
+.f-add-staff #f-phone-tg,
+.f-add-staff #f-email {
+    max-width: 100%;
+}
+
+.f-add-staff .gender {
+    display: flex;
+}
+
+.f-add-staff .gender label,
+.f-add-staff .gender input {
+    margin: 0.2rem 0 0.7rem 0;
+    width: auto;
+}
+
+.f-add-staff .gender label {
+    margin-right: 1rem;
+
+    color: #000;
+    font: var(--font-normal);
+}
+
+.f-add-staff .gender input {
+    margin-right: 0.2rem;
+}
+
+/*.f-add-staff #f-experience,*/
+/*.f-add-staff #f-employment-date,*/
+.f-add-staff #f-post,
+.f-add-staff #f-status {
+    max-width: 100%;
+}
+
+
+#staff-photo img {
+    margin: 0.2rem 0 1rem 0;
+    width: 100%;
+    max-width: 350px;
 }
 
 label#f-photo-label {
-    margin: 0.2rem 0 1rem 0;
+    margin: 0.2rem 0 0.2rem 0;
     padding: 4px 6px;
 
     display: inline-block;
@@ -71,7 +108,161 @@ label#f-photo-label {
     cursor: pointer;
 }
 
-#f-photo-chosen{
+#f-photo-chosen {
     margin-left: 0.3rem;
-    font-family: sans-serif;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.f-add-staff-row .staff-services {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+    max-width: 600px;
+}
+
+.staff-services-title {
+    font: var(--font-small);
+}
+
+.f-add-staff-row .staff-services-row {
+    display: flex;
+
+    border-bottom: 1px solid #b3b3b3;
+    font: var(--font-small);
+}
+
+.f-add-staff-row .staff-services-row div {
+    margin: 0 0 0.7rem 0;
+    padding: 0.5rem 1rem 0 0;
+    box-sizing: border-box;
+}
+
+.staff-services-btn button.add {
+    margin: 1rem 0 0 0;
+    padding: 4px 6px;
+
+    display: inline-block;
+    text-align: center;
+
+    border-radius: 5px;
+    color: white;
+    background-color: var(--middle-main-color);
+    font: var(--font-normal);
+    cursor: pointer;
+}
+
+.f-add-staff .f-add-staff-row:last-child {
+    border-bottom: none;
+}
+
+.staff-services-row .services-title {
+    width: 50%;
+}
+
+.staff-services-row .staff-service-rang {
+    width: 30%;
+}
+
+.staff-services-row .icons {
+    width: 20%;
+    text-align: right;
+}
+
+.staff-services-row .icons img {
+    margin-left: 1rem;
+}
+
+.w-40-50-60-100 {
+    width: 40%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.w-60-50-40-100 {
+    width: 40%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px) {
+    .f-add-staff-row .title {
+        width: 20%;
+    }
+
+    .f-add-staff-row .fields {
+        width: 80%;
+    }
+
+    .w-40-50-60-100, .w-60-50-40-100 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .f-add-staff-row {
+        flex-wrap: wrap;
+    }
+
+    .f-add-staff-row .title {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .w-40-50-60-100, .w-60-50-40-100 {
+        padding-right: 1rem;
+    }
+
+    .w-40-50-60-100 {
+        width: 60%;
+    }
+
+    .w-60-50-40-100 {
+        width: 40%;
+    }
+
+    .f-add-staff-row .fields {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .w-40-50-60-100, .w-60-50-40-100 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .f-add-staff .fields .fio {
+        flex-wrap: wrap;
+    }
+
+    .f-add-staff-row .title {
+        margin-bottom: 2rem;
+    }
+
+    .f-add-staff-row {
+        margin-bottom: 2rem;
+    }
+
+    .f-add-staff-row .staff-services-row div {
+        margin: 0 0 0.7rem 0;
+        padding: 0.5rem 0.5rem 0 0;
+    }
+
+    .staff-services-row .staff-service-rang{
+        width: 40%;
+    }
+
+    .staff-services-row .icons {
+        width: 10%;
+    }
+    .staff-services-row .icons img {
+        margin-left: 0;
+        margin-bottom: 0.4rem;
+    }
 }
