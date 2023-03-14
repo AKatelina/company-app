@@ -3,10 +3,10 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>clicliBusiness | Бизнес</title>
+    <title>МоиЗаписи | Новая услуга</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css?v=1.0">
-    <link rel="stylesheet" href="css/p-business.css">
+    <link rel="stylesheet" href="css/p-service-add.css?v=1.0">
 </head>
 
 <body class="body-absolute">
@@ -78,50 +78,62 @@
             </button>
             <div class="navbar__breadcrumbs">
                 <a href="index.html">Главная</a> /
-                <a href="p-business.html">Бизнес</a>
+                <a href="p-service-add.html">Новая услуга</a>
             </div>
         </div>
 
         <div class="main">
-            <form class="f-normal f-business">
-                <div>
-                    <label for="f-title" class="f-label-show">
-                        Название
-                    </label>
-                    <input id="f-title" type="text" placeholder="СliСliBusiness">
-                </div>
+            <form class="f-add-service">
+                <div class="f-add-service-row">
+                    <div class="title">
+                        Услуга
+                    </div>
 
-                <div>
-                    <label for="f-description" class="f-label-show">
-                        Краткое описание
-                    </label>
-                    <textarea id="f-description">Мы умеем анализировать ваш бизнес, оптимизировать затраты и увеличивать прибыль</textarea>
-                </div>
+                    <div class="fields">
+                        <div class="w-40-50-60-100">
+                            <div>
+                                <label for="f-name" class="f-label-show">Имя</label>
+                                <input type="text" id="f-name" placeholder="Анастасия">
+                            </div>
+                            <div>
+                                <label for="f-patronymic" class="f-label-show">Отчество</label>
+                                <input type="text" id="f-patronymic" placeholder="Александровна">
+                            </div>
+                            <div>
+                                <label for="f-sername" class="f-label-show">Фамилия</label>
+                                <input type="text" id="f-sername" placeholder="Кателинская">
+                            </div>
+                            <div>
+                                <label for="f-birthday" class="f-label-show">Дата рождения</label>
+                                <input type="date" id="f-birthday" placeholder="DD/MM/YYYY">
+                            </div>
+                            <div>
+                                <label class="f-label-show">Пол</label>
+                                <div class="gender">
+                                    <input id="gender-m" type="radio" name="f-auditory-style">
+                                    <label for="gender-m" class="f-label-show">Мужской</label>
 
-                <div>
-                    <label for="f-mission" class="f-label-show">
-                        Миссия
-                    </label>
-                    <input id="f-mission" type="text" placeholder="Оптимизируем ваши бизнес-процессы">
-                </div>
+                                    <input id="gender-g" type="radio" name="f-auditory-style">
+                                    <label for="gender-g" class="f-label-show">Женский</label>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div id="staff-photo" class="w-60-50-40-100">
+                            <label class="f-label-show">Фото</label>-->
+                            <img src="images/p-staff-1.jpg" alt="Анастасия Александровна Кателинская">
+                            <div>
+                                <input id="f-photo" type="file" name="file" hidden>
+                                <label id="f-photo-label" class="f-label-show" for="f-photo">Выбрать файл</label>
+                                <span id="f-photo-chosen">Файл не выбран</span>
+                            </div>
+                        </div>
 
-                <div>
-                    <label for="f-auditory" class="f-label-show">
-                        Целевая аудитория
-                    </label>
-                    <input id="f-auditory" type="text" placeholder="Целевая аудитория"><br>
-                </div>
+                    </div>
 
-                <div>
-                    <label for="f-auditory-style1" class="f-label-show">
-                        Тип аудитории:
-                    </label>
-                    <input id="f-auditory-style1" type="radio" name="f-auditory-style"> Бизнесовый (vip) <br>
-                    <input id="f-auditory-style2" type="radio" name="f-auditory-style"> Семейный (health)<br>
-                    <input id="f-auditory-style3" type="radio" name="f-auditory-style"> Эстетичный (beauty)<br>
-                    <input id="f-auditory-style4" type="radio" name="f-auditory-style"> Надежный (practical)<br>
                 </div>
+                <button class="f-save">Сохранить</button>
+
             </form>
         </div>
     </div>

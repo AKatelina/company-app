@@ -1,0 +1,104 @@
+/*ПЕРЕМЕННЫЕ*/
+@import url("variables.css");
+
+.f-add-service {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    font: var(--font-normal);
+}
+
+.f-add-service-row {
+    margin: 0 0 1rem 0;
+    padding: 0 0 0.5rem 0;
+    width: 100%;
+
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.f-add-service .title {
+    width: 25%;
+}
+
+.f-add-service .fields {
+    width: 75%;
+    position: relative;
+    display: flex;
+}
+
+.f-add-service .f-save {
+    margin: 0.5rem 0 1rem 0;
+    padding: 8px 12px;
+    /*width: 100%;*/
+
+    display: inline-block;
+    text-align: center;
+
+    border-radius: 5px;
+    color: white;
+    background-color: var(--middle-main-color);
+
+    font: var(--font-normal);
+    cursor: pointer;
+}
+
+
+
+.w-40-50-60-100 {
+    width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.w-60-50-40-100 {
+    width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px) {
+    .f-add-service .title {
+        width: 20%;
+    }
+
+    .f-add-service .fields {
+        width: 80%;
+    }
+
+    .w-40-50-60-100, .w-60-50-40-100 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .f-add-service {
+        flex-wrap: wrap;
+    }
+
+    .f-add-service .title {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .w-40-50-60-100, .w-60-50-40-100 {
+        padding-right: 1rem;
+    }
+
+    .w-40-50-60-100 {
+        width: 60%;
+    }
+
+    .w-60-50-40-100 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .w-40-50-60-100, .w-60-50-40-100 {
+        width: 100%;
+        padding-right: 0;
+    }
+}
