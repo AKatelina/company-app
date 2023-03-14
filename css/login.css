@@ -37,7 +37,7 @@
     color: var(--middle-main-color);
 }
 
-.header .log-link:hover{
+.header .log-link:hover {
     color: var(--dark-main-color);
 }
 
@@ -76,6 +76,12 @@
     padding: 0;
 
     font: var(--font-largest-bold);
+}
+
+@media screen and (max-width: 425px) {
+    .form-sign-in h1{
+        font: var(--font-large-bold);
+    }
 }
 
 .form-sign-in .input-wrap {
@@ -140,7 +146,7 @@
 .form-sign-in input:focus,
 .form-sign-in input.checkbox:active,
 .form-sign-in input.checkbox:hover,
-.form-sign-in input.checkbox:focus{
+.form-sign-in input.checkbox:focus {
     background-color: #FFFFFF;
 }
 
@@ -178,7 +184,7 @@
     color: var(--middle-main-color);
 }
 
-.form-sign-in a.link:hover{
+.form-sign-in a.link:hover {
     color: var(--dark-main-color);
 }
 
