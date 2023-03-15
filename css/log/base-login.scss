@@ -10,12 +10,12 @@ $neutral-main-color: #ADADAD;
 $white-main-color: #FFFFFF;
 
 //Базовые шрифты
-$main-font-style: "Open Sans", sans-serif;
-$font-largest-bold: 800 33px "Open Sans", sans-serif;
-$font-large-bold: 800 20px "Open Sans", sans-serif;
-$font-large: 400 20px "Open Sans", sans-serif;
-$font-normal: 400 16px "Open Sans", sans-serif;
-$font-small: 400 14px "Open Sans", sans-serif;
+$main-font-style: "Helvetica", "Open Sans", sans-serif;
+$font-largest-bold: 800 33px $main-font-style;
+$font-large-bold: 800 20px $main-font-style;
+$font-large: 400 18px $main-font-style;
+$font-normal: 400 16px $main-font-style;
+$font-small: 400 14px $main-font-style;
 
 //Анимация
 $transition-l: linear .2s;
@@ -26,7 +26,7 @@ $middle-icons-size: 22px;
 $small-icons-size: 14px;
 
 //Глобальные константы
-$max-form-width: 425px;
+$max-form-width: 500px;
 
 
 /*ОСНОВНОЕ*/
@@ -109,27 +109,40 @@ a:hover {
       align-items: center;
 
       box-sizing: border-box;
+
+      @media screen and (max-width: 532px) {
+        max-width: 468px;
+      }
     }
 
     a {
       margin: 0 0 0 1rem;
+      @media screen and (max-width: 320px) {
+        margin-left: 0.75rem;
+        font: $font-small;
+      }
     }
 
     .logo {
       margin: 0 auto 0 0;
 
-      font: $font-large-bold;
       color: $dark-font-color;
+      font: $font-large-bold;
+
+      @media screen and (max-width: 320px) {
+        font: $font-normal;
+        font-weight: 800;
+      }
     }
 
-    @media screen and (max-width: 457px) {
+    @media screen and (max-width: 532px) {
       padding: 1rem;
     }
   }
 
   form {
-    margin: 3rem 0;
-    padding: 1rem 2rem;
+    margin: 2.5rem 0;
+    padding: 1rem;
     width: 100%;
     max-width: $max-form-width;
 
@@ -146,6 +159,10 @@ a:hover {
 
       text-align: center;
       font: $font-largest-bold;
+
+      @media screen and (max-width: 425px) {
+        font: $font-large-bold;
+      }
     }
 
     div {
@@ -168,6 +185,13 @@ a:hover {
       font: $font-large;
       border: 1px solid $neutral-main-color;
       background-color: $white-main-color;
+
+      @media screen and (max-width: 425px) {
+        font: $font-normal;
+      }
+      @media screen and (max-width: 325px) {
+        padding: 0.75rem 0.5rem;
+      }
     }
 
     input[type='checkbox'] {
@@ -186,21 +210,34 @@ a:hover {
 
       a {
         font: $font-large;
+        @media screen and (max-width: 425px) {
+          font: $font-small;
+        }
+      }
+
+      @media screen and (max-width: 425px) {
+        font: $font-small;
       }
     }
 
     .btn {
       margin: 0.75rem 0 1.4rem 0;
-      padding: 0.75rem 0;
+      padding: 0.75rem 1rem;
       width: 100%;
 
       display: flex;
       justify-content: center;
+      text-align: center;
+      box-sizing: border-box;
 
       border-radius: 5px;
       font: $font-large;
       color: $light-font-color;
       background-color: $middle-main-color;
+
+      @media screen and (max-width: 425px) {
+        font: $font-normal;
+      }
     }
 
     .btn:hover {
