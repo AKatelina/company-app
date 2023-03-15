@@ -26,7 +26,7 @@ $middle-icons-size: 22px;
 $small-icons-size: 14px;
 
 //Глобальные константы
-$max-form-width: 28rem;
+$max-form-width: 425px;
 
 
 /*ОСНОВНОЕ*/
@@ -121,11 +121,15 @@ a:hover {
       font: $font-large-bold;
       color: $dark-font-color;
     }
+
+    @media screen and (max-width: 457px) {
+      padding: 1rem;
+    }
   }
 
   form {
     margin: 3rem 0;
-    padding: 1rem;
+    padding: 1rem 2rem;
     width: 100%;
     max-width: $max-form-width;
 
@@ -194,6 +198,7 @@ a:hover {
       justify-content: center;
 
       border-radius: 5px;
+      font: $font-large;
       color: $light-font-color;
       background-color: $middle-main-color;
     }
