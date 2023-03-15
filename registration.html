@@ -3,53 +3,55 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>МоиЗаписи | Регистрация</title>
+    <title>Регистрация</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css?v=1.0">
+    <link rel="stylesheet" href="css/log/base-login.css">
 </head>
 
 <body>
 
-<div class="app">
+<div class="main">
     <div class="header">
-        <div class="page-max-w">
-            <a class="logo-text" href="index.html">МоиЗаписи</a>
-            <a class="log-link" href="login.html">Вход</a>
-            <a class="log-link" href="registration.html">Регистрация</a>
+        <div class="max-wrap">
+            <a class="logo" href="index.html">CliCliService</a>
+            <a href="login.html">Вход</a>
+            <a href="registration.html">Регистрация</a>
         </div>
     </div>
 
-    <form class="form-sign">
+    <form>
         <h1>РЕГИСТРАЦИЯ</h1>
         <div>
-            <input id="name" type="text" placeholder="Имя">
-            <label for="name">Имя</label>
+            <input id="mail" type="email" placeholder="Email">
+            <label for="mail" hidden>Почта</label>
         </div>
         <div>
-            <input id="phone" type="text" placeholder="Телефон">
-            <label for="phone">Телефон</label>
+            <input id="password" type="password" placeholder="Пароль">
+            <label for="password" hidden>Пароль</label>
         </div>
         <div>
-            <input id="mail" type="text" placeholder="Почта">
-            <label for="mail">Почта</label>
+            <input id="password-repeat" type="password" placeholder=" Повторите пароль">
+            <label for="password-repeat" hidden>Повторите пароль</label>
         </div>
-                <div>
-                    <input id="password1" type="password" placeholder="Пароль">
-                    <label for="password1">Пароль</label>
-                </div>
-                <div>
-                    <input id="password2" type="password" placeholder=" Повторите пароль">
-                    <label for="password2">Повторите пароль</label>
-                </div>
-        <div>
-            <input type="checkbox" class="checkbox">
-            <span>Я принимаю</span>
-            <a class="link" href="#doc-license-agreement">условия лицензионного договора</a>
-            <span>и разрешаю </span>
-            <a class="link" href="#doc-personal-data">обработку персональных данных</a>
+        <div class="checkbox-wrap">
+            <label for="agreement" hidden>Соглашение</label>
+            <input id="agreement" type="checkbox">
+                <span>Я&nbsp;принимаю</span>
+                <a href="#">условия лицензионного договора</a>
+                <span>и&nbsp;разрешаю </span>
+                <a href="#">обработку персональных данных</a>
         </div>
         <a class="btn" href="index.html">Зарегистрироваться</a>
     </form>
+
+    <div class="footer">
+        <div class="max-wrap">
+            <span>
+                @ 2023 ООО
+                <a href="#">"Айти Вертекс"</a>
+            </span>
+        </div>
+    </div>
 </div>
 
 </body>

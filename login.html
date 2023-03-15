@@ -3,42 +3,49 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>МоиЗаписи | Вход</title>
+    <title>Вход</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css?">
+    <link rel="stylesheet" href="css/log/base-login.css">
 </head>
 
 <body>
 <script src="js/login.js" async></script>
 
-<div class="app">
+<div class="main">
     <div class="header">
-        <div class="page-max-w">
-            <a class="logo-text" href="index.html">CliCliService</a>
-            <a class="log-link" href="login.html">Вход</a>
-            <a class="log-link" href="registration.html">Регистрация</a>
+        <div class="max-wrap">
+            <a class="logo" href="index.html">CliCliService</a>
+            <a href="login.html">Вход</a>
+            <a href="registration.html">Регистрация</a>
         </div>
     </div>
 
-    <form class="form-sign-in">
-        <h1>CliCliService.Admin</h1>
-        <div class="input-wrap">
+    <form>
+        <h1>ВХОД</h1>
+        <div>
             <input id="email" placeholder="Email" autofocus>
-            <label for="email">Email</label>
-            <img src="images/icons/login/envelope-fill-1.svg" alt="Ввести Email">
+            <label for="email" hidden>Email</label>
+<!--            <img src="images/icons/login/envelope-fill-1.svg" alt="Ввести Email">-->
         </div>
-        <div class="input-wrap">
+        <div>
             <input id="password" type="password" placeholder="Пароль">
-            <label for="password">Пароль</label>
-            <img src="images/icons/login/lock-fill-1.svg" alt="Ввести пароль">
-            <img id="eye-open" class="hide" src="images/icons/login/eye-fill.svg" alt="Посмотреть пароль">
-            <img id="eye-close" src="images/icons/login/eye-slash-fill.svg" alt="Посмотреть пароль">
+            <label for="password" hidden>Пароль</label>
+<!--            <img src="images/icons/login/lock-fill-1.svg" alt="Ввести пароль">-->
+<!--            <img id="eye-open" class="hide" src="images/icons/login/eye-fill.svg" alt="Посмотреть пароль">-->
+<!--            <img id="eye-close" src="images/icons/login/eye-slash-fill.svg" alt="Посмотреть пароль">-->
         </div>
         <a class="btn" href="index.html">Войти</a>
-        <a class="link" href="password-recovery.html">Восстановить пароль</a>
+        <a href="password-recovery.html">Восстановить пароль</a>
     </form>
 
-    <div class="copyright">@ 2023 ООО <a href="#">"Айти Вертекс"</a></div>
+    <div class="footer">
+        <div class="max-wrap">
+            <span>
+                @ 2023 ООО
+                <a href="#">"Айти Вертекс"</a>
+            </span>
+        </div>
+    </div>
 </div>
 
 </body>

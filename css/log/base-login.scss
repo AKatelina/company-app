@@ -1,0 +1,224 @@
+//Цвета текста
+$dark-font-color: #2F4F4F;
+$light-font-color: #FFF;
+
+//Цвета элементов
+$dark-main-color: #2777A5;
+$middle-main-color: #2E8CC2;
+$light-main-color: #F0F8FF;
+$neutral-main-color: #ADADAD;
+$white-main-color: #FFFFFF;
+
+//Базовые шрифты
+$main-font-style: "Open Sans", sans-serif;
+$font-largest-bold: 800 33px "Open Sans", sans-serif;
+$font-large-bold: 800 20px "Open Sans", sans-serif;
+$font-large: 400 20px "Open Sans", sans-serif;
+$font-normal: 400 16px "Open Sans", sans-serif;
+$font-small: 400 14px "Open Sans", sans-serif;
+
+//Анимация
+$transition-l: linear .2s;
+
+//Размеры иконок
+$large-icons-size: 31px;
+$middle-icons-size: 22px;
+$small-icons-size: 14px;
+
+//Глобальные константы
+$max-form-width: 28rem;
+
+
+/*ОСНОВНОЕ*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  // чтобы на мобилке не выделялись ссылки при наведении
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*Основное---Сброс стилей кнопок и ссылок*/
+//button {
+//  margin: 0;
+//  padding: 0;
+//
+//  border: none;
+//  font: inherit;
+//  cursor: pointer;
+//  transition: none;
+//}
+
+a {
+  text-decoration: inherit;
+
+  font: $font-normal;
+  color: $middle-main-color;
+  transition: $transition-l;
+}
+
+a:hover {
+  color: $dark-main-color;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+//БАЗОВЫЕ СТИЛИ
+// ---СТРАНИЦ ВХОДА,
+// --РЕГИСТРАЦИИ,
+// --ВОССТАНОВЛЕНИЯ ПАРОЛЯ
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font: $font-normal;
+  color: $dark-font-color;
+  background-color: $light-main-color;
+
+
+  .max-wrap {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .header {
+    margin: 0 auto auto auto;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background-color: $white-main-color;
+
+    .max-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      box-sizing: border-box;
+    }
+
+    a {
+      margin: 0 0 0 1rem;
+    }
+
+    .logo {
+      margin: 0 auto 0 0;
+
+      font: $font-large-bold;
+      color: $dark-font-color;
+    }
+  }
+
+  form {
+    margin: 3rem 0;
+    padding: 1rem;
+    width: 100%;
+    max-width: $max-form-width;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    font: $font-large;
+
+    h1 {
+      margin: 0 0 0.5rem 0;
+      padding: 0;
+
+      text-align: center;
+      font: $font-largest-bold;
+    }
+
+    div {
+      margin: 0.75rem 0;
+      width: 100%;
+
+      position: relative;
+
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      margin: 0;
+      padding: 0.75rem 1rem;
+      width: 100%;
+
+      box-sizing: border-box;
+      border-radius: 5px;
+      font: $font-large;
+      border: 1px solid $neutral-main-color;
+      background-color: $white-main-color;
+    }
+
+    input[type='checkbox'] {
+      margin: 0 0.2rem;
+      width: 1rem;
+      height: 1rem;
+
+      display: inline;
+    }
+
+    .checkbox-wrap {
+      display: inline-block;
+      text-align: center;
+
+      font: $font-large;
+
+      a {
+        font: $font-large;
+      }
+    }
+
+    .btn {
+      margin: 0.75rem 0 1.4rem 0;
+      padding: 0.75rem 0;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+
+      border-radius: 5px;
+      color: $light-font-color;
+      background-color: $middle-main-color;
+    }
+
+    .btn:hover {
+      background-color: $dark-main-color;
+    }
+  }
+
+  .footer {
+    margin-top: auto;
+    padding: 1rem;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    font: $font-small;
+    background-color: $white-main-color;
+
+    .max-wrap {
+      text-align: center;
+    }
+
+    a {
+      font: $font-small;
+    }
+  }
+}
